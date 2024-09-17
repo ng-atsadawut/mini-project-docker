@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.card{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card h3{
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card p{
+    margin: 10px 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_container{
+    text-align: center;
+}
+
+
+/* Path: src/GetProducts.css */
