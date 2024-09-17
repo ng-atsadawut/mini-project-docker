@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  # PostgreSQL Service
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password1234
+      POSTGRES_DB: EcommerceDB
+    ports:
+      - "5432:5432"
+
+  # Express App Service
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    environment:
+      PGUSER: postgres
+      PGHOST: postgres
+      PGDATABASE: EcommerceDB
+      PGPASSWORD: password1234
+      PGPORT: 5432
